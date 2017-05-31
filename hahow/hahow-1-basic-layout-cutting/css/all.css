@@ -1,0 +1,24 @@
+* {
+  border: 2px red solid;
+  height: 300px;
+  font-size: 0;
+  vertical-align: top; }
+
+html, body {
+  border: none;
+  margin: 0px;
+  padding: 0px; }
+
+.wrapper {
+  height: initial;
+  border: green 5px solid; }
+  .wrapper .content {
+    border: blue 2px solid; }
+    .wrapper .content .left, .wrapper .content .right {
+      font-size: 20px;
+      display: inline-block;
+      height: 200px;
+      width: 50%;
+      box-sizing: border-box; }
+    .wrapper .content .left {
+      height: 100px; }
