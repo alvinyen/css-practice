@@ -6,3 +6,10 @@ gulp.task(('sass'), () => {
         .pipe(sass())
         .pipe(gulp.dest('css/'));
 });
+
+gulp.task('copy-assets', () => {
+    gulp.src('./pug/index.html')
+        .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', ['sass', 'copy-assets']);
