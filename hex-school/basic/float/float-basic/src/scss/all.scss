@@ -1,0 +1,54 @@
+@mixin clearfix {
+  &:after, &:before {
+    content: "";
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
+  *zoom:1;
+}
+
+* {
+  border: 2px solid red;
+}
+html, body {
+  border: 0;
+  padding: 0;
+}
+.clearfix {
+  *zoom: 1; /*For IE 6&7 only*/
+  &::before, &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+.wrapper {
+  .header,.footer {
+    height: 100px;
+  }
+  .content {
+    // height: 500px;
+    .left, .right {
+      display: inline-block;
+    }
+    .left {
+      height: 50px;
+      width: 30%;
+      float: left;
+    }
+    .right {
+      height: 30px;
+      width: 30%;
+      float: right;
+    }
+    .bottom {
+      height: 20px;
+      border-color: black;
+      clear: both;
+    }
+  }
+}
