@@ -17,6 +17,11 @@
 - temp最佳實務
     - 在父元素加上micro-clearfix-hack
     - 在float元素之後的元素設定clearfix: both; (在最後1個float元素的後面那個加上clearfix)
+- 在sass專案中使用clearfix mixin或extend
+    - 什麼時候用mixin？什麼時候用extend？
+        - 在很多地方都會用到的話就使用extend，因為mixin會重複產生很多組clearfix的程式碼。
+        - extend則是程式碼的合併，會讓最後的樣式檔案較為簡潔。
+    - [參考資料：CSS Clearfix 清除浮動](http://kgl.idv.tw/2014/11/17/css-clearfix-%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8B%95/)
 
 ## To Do
 - 筆記、重點整理
