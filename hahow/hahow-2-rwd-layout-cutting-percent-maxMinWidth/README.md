@@ -1,7 +1,7 @@
 # hahow-2-rwd-layout-cutting-percent-maxMinWidth
 
-## 實作步驟 (待整理)
-### 1. RWD趴數切版
+## 『 實作步驟 (待整理) 』
+### [ 1. RWD趴數切版 ] 
 - pug搭配emmet拉架構、塞h4內容 (給趴數，之後比較方便去調css設定)
     - ![](https://i.imgur.com/aJyA5in.png)
     - `.block*7>h4`
@@ -21,14 +21,16 @@
 
 <hr>
 
-### 2. 觀察：滿版 -> 限制最大寬度：讓整個版面擁有固定的寬度
+### [ 2. 觀察：滿版 -> 限制最大寬度：讓整個版面擁有固定的寬度 ]
 - <font color=red>針對container去做設定</font>
     - max-width: 1024px;
     - 置中: margin-left、margin-right
+        - 設定置中是margin-right/left: auto;
+        - 不是margin-left/right: 0！！
 
 <hr>
 
-### 3. 限制最小寬度
+### [ 3. 限制最小寬度 ]
 - 給定logo (src: hahow)到a box
     - a box破版：因為針對.block設定height的關係 -> height: initial;
 - 給img再另外加個class icon (有時間再踹為何不直接針對img去下樣式設定？？ 或許是因為不希望調整到整個網頁的所有img)
@@ -38,8 +40,8 @@
 <hr>
 <hr>
 
-## 實作重點整理 (待整理)
-### 1. RWD趴數切版
+## 『 實作重點整理 (待整理) 』
+### [ 1. RWD趴數切版 ]
 - 給定共同的class用來一起調整樣式、給定特定的class用來做針對性地微調
     - ex：`.block.a~g`
         - 注意指定的時候不應該
@@ -61,5 +63,10 @@
     - 其他
         - 設定固定高度容易破版
         - 因為高度破版 -> height: initial;
-- test text color
-    - <font color=red>紅字</font>
+
+<hr>
+
+### [ 2. 不要永遠滿版 -> 針對container設定最大寬度 ]
+- 針對container設定max-width
+- 設定置中是margin-right/left: auto;
+    - 不是margin-left/right: 0！！

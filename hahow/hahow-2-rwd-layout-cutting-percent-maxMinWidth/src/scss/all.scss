@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 2px solid red;
+    // border: 2px solid red;
 }
 html, body {
     margin: 0;
@@ -8,7 +8,11 @@ html, body {
 }
 .wrapper {
     font-size: 0;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
     .block {
+        border: 2px solid red;
         display: inline-block;
         font-size: 20px;
         height: 100px;
