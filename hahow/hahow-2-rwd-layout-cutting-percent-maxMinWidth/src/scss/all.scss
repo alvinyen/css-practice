@@ -20,6 +20,11 @@ html, body {
     }
     .a,.g {
         width: 100%;
+        height: initial;
+        .icon {
+            width: 30%;
+            min-width: 200px;
+        }
     }
     .b {
         width: 70%;

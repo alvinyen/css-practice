@@ -62,7 +62,7 @@
     - 2. all about box model
     - 其他
         - 設定固定高度容易破版
-        - 因為高度破版 -> height: initial;
+        - 因為高度破版 -> 針對區塊、標的 height: initial; (3. 避免圖片滿版)
 
 <hr>
 
@@ -70,3 +70,12 @@
 - 針對container設定max-width
 - 設定置中是margin-right/left: auto;
     - 不是margin-left/right: 0！！
+
+<hr>
+
+### [ 3. 避免圖片滿版 ]
+- 避免因圖片而a區塊破版
+    - a { height: initial }
+- 設定圖片只佔一定寬度 
+    - width: n%;
+- 設定圖片最小寬度

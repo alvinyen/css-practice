@@ -17,7 +17,11 @@ html, body {
     height: 100px;
     text-align: center; }
   .wrapper .a, .wrapper .g {
-    width: 100%; }
+    width: 100%;
+    height: initial; }
+    .wrapper .a .icon, .wrapper .g .icon {
+      width: 30%;
+      min-width: 200px; }
   .wrapper .b {
     width: 70%; }
   .wrapper .c {
