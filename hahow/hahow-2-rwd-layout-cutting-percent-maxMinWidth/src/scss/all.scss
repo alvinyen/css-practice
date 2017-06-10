@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    font-size: 0;
+    .block {
+        display: inline-block;
+        font-size: 20px;
+        height: 100px;
+        text-align: center;
+    }
+    .a,.g {
+        width: 100%;
+    }
+    .b {
+        width: 70%;
+    }
+    .c {
+        width: 30%;
+    }
+    .d {
+        width: 35%;
+    }
+    .e {
+        width: 35%;
+    }
+    .f {
+        width: 30%;
+    }
+}

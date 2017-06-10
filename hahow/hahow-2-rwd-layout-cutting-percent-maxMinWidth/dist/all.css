@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  border: 2px solid red; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  font-size: 0; }
+  .wrapper .block {
+    display: inline-block;
+    font-size: 20px;
+    height: 100px;
+    text-align: center; }
+  .wrapper .a, .wrapper .g {
+    width: 100%; }
+  .wrapper .b {
+    width: 70%; }
+  .wrapper .c {
+    width: 30%; }
+  .wrapper .d {
+    width: 35%; }
+  .wrapper .e {
+    width: 35%; }
+  .wrapper .f {
+    width: 30%; }

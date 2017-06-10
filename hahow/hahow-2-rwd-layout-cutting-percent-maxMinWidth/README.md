@@ -42,12 +42,24 @@
 ### 1. RWD趴數切版
 - 給定共同的class用來一起調整樣式、給定特定的class用來做針對性地微調
     - ex：`.block.a~g`
+        - 注意指定的時候不應該
+            - ![](https://i.imgur.com/zoSbD1Z.png)
+        - 應該
+            - ![](https://i.imgur.com/HPVp6vz.png)
+    - 針對*設定display: inline-block;可能會跑出奇怪的東西 (因為script tag等等)
     - 先針對所有去設定樣式：.block
     - 再針對各自的去設定樣式：.a~g
 - 針對*給定border可能不小心給到script tag或link tag而不小心
+- 不要太習慣針對*去設定 (不然針對父元素設定而希望子元素繼承樣式設定時可能蓋不掉！！)
 - 破版處理
     - 1. 奇怪的換行：font-size: 0;、font-size: 各自的需要;
+        - 不要針對*設定font-size: 0;
+        - 不然設定.a~g的font-size時，h4中的font-size: 0;蓋不掉
+        - 正確設定
+            - ![](https://i.imgur.com/o1FMuip.png)
     - 2. all about box model
     - 其他
         - 設定固定高度容易破版
         - 因為高度破版 -> height: initial;
+- test text color
+    - <font color=red>紅字</font>

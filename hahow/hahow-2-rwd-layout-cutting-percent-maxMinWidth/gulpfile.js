@@ -16,4 +16,4 @@ gulp.task('pug', () => {
         .pipe(gulp.dest('./dist'));
 });
 
-gul.task('default', ['sass', 'pug']);
+gulp.task('default', ['sass', 'pug']);
