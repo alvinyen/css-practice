@@ -12,3 +12,4 @@
 - basic
     - float
         - float-basic
+        - float-advanced-left-logo-right-menu
