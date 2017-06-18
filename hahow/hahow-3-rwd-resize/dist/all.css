@@ -23,6 +23,20 @@ html, body {
       font-size: 16px; }
     .wrapper .block p {
       font-size: 12px; }
+  .wrapper .intro {
+    width: 100%;
+    height: initial; }
+    .wrapper .intro .sblocks .sblock {
+      border: 2px solid black;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 30%; }
+      .wrapper .intro .sblocks .sblock img {
+        width: 100%;
+        height: 200px;
+        background-color: #aaa; }
+      .wrapper .intro .sblocks .sblock h5 {
+        font-size: 16px; }
   .wrapper .a {
     height: initial; }
     .wrapper .a .icon {
@@ -41,6 +55,9 @@ html, body {
       width: 100%; }
     .wrapper .c, .wrapper .d, .wrapper .e, .wrapper .f {
       width: 50%; } }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 450px) {
     .wrapper .c, .wrapper .d, .wrapper .e, .wrapper .f, .wrapper .g {
+      width: 100%; }
+    .wrapper .intro .sblocks .sblock {
+      display: inline-block;
       width: 100%; } }

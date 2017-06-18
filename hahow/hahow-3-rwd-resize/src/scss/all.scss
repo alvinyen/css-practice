@@ -26,6 +26,28 @@ html, body {
             font-size: 12px;
         }
     }
+    .intro {
+        width: 100%;
+        height: initial;
+        .sblocks {
+            .sblock {
+                border: 2px solid black;
+                // margin: 10px;
+                margin-bottom: 10px;
+                display: inline-block;
+                width: 30%;
+                img {
+                    width: 100%;
+                    height: 200px;
+                    background-color: #aaa;
+                }
+                h5 {
+                    font-size: 16px;
+                }
+            }
+            
+        }
+    }
     .a { 
         height: initial; 
         .icon {
@@ -45,9 +67,17 @@ html, body {
             width: 50%;
         }
     }
-    @media screen and (max-width: 550px){
+    @media screen and (max-width: 450px){
         .c, .d, .e, .f, .g {
             width: 100%;
+        }
+        .intro {
+            .sblocks {
+                .sblock {
+                    display: inline-block;
+                    width: 100%;                    
+                }
+            }
         }
     }
 }

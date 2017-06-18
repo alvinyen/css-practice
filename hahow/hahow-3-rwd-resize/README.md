@@ -49,6 +49,25 @@
         - ex：.a, .b, .c { ... }
     - 在內層針對性的做media query設定才會成功 ???
         - ex: .wrapper .a, .wrapper .b, .wrapp .c { ... }
-
+- .sblocks>.sblock*3>img+h5
+    - .sblocks：方便管理
+- 重點步驟
+    - .sblock
+        - 先給他border讓它看得到
+        - !!：inline-block
+        - 放入標題1~3
+        - 最重要！！
+            - 寬度趴數設定重點：先設定裡面的為100趴，再進一步往外做設定
+                - 先設定裡面的img為100趴
+                - 再往外設定.sblock為30趴
+            - img { width: 100%; height: 100px; background-color: #aaa; }
+            - .sblock { width: 30%; }  
+    - 設定media query
+- font-size要做針對性地指定，why??
+- 趴數都是相對於父元素
+- 寬度趴數設定重點：先設定裡面的，再進一步往外設定
+    - 先設定.img為100趴
+    - 再設定.sblock為30趴
+- .sblock { margin: ..} 造成破版？？
 <hr>
 
