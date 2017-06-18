@@ -1,6 +1,7 @@
 * {
-    border: 2px solid red;
-    height: 200px;
+    // border: 2px solid red;
+    box-sizing: border-box;
+    font-size: 0;
 }
 html, body {
     padding: 0;
@@ -8,5 +9,28 @@ html, body {
     height: initial;
 }
 .wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
+    .block {
+        display: inline-block;
+        height: 200px;
+        border: 2px solid red;
+        text-align: center;
+        h4 {
+            font-size: 16px;
+        }
+    }
+    .a { 
+        height: initial; 
+        .icon {
+            width: 60%;
+            min-width: 350px;
+        }
+    }
+    .a, .g { width: 100%; }
+    .b { width: 70%; }
+    .c, .f { width: 30%; }
+    .d, .e { width: 35%; }
 }

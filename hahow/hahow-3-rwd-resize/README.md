@@ -3,6 +3,10 @@
 ## 『 實作步驟 (待整理) 』
 ### [ 0. 趴數切版、極值考慮、最大container、最小圖片 ] 
 - 參考hahow-2-rwd-layout-cutting-percent-maxMinWidth
+- 拾遺補缺
+    - .block -> inline-block
+    - img.icon
+    - 關鍵：用個class (例如.icon)把img包起來，然後針對.icon設定% width
 
 <hr>
 

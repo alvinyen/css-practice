@@ -1,6 +1,6 @@
 * {
-  border: 2px solid red;
-  height: 200px; }
+  box-sizing: border-box;
+  font-size: 0; }
 
 html, body {
   padding: 0;
@@ -8,4 +8,27 @@ html, body {
   height: initial; }
 
 .wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
   height: auto; }
+  .wrapper .block {
+    display: inline-block;
+    height: 200px;
+    border: 2px solid red;
+    text-align: center; }
+    .wrapper .block h4 {
+      font-size: 16px; }
+  .wrapper .a {
+    height: initial; }
+    .wrapper .a .icon {
+      width: 60%;
+      min-width: 350px; }
+  .wrapper .a, .wrapper .g {
+    width: 100%; }
+  .wrapper .b {
+    width: 70%; }
+  .wrapper .c, .wrapper .f {
+    width: 30%; }
+  .wrapper .d, .wrapper .e {
+    width: 35%; }
