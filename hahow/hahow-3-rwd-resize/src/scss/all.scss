@@ -1,7 +1,7 @@
 * {
-    // border: 2px solid red;
     box-sizing: border-box;
     font-size: 0;
+    vertical-align: top;
 }
 html, body {
     padding: 0;
@@ -18,8 +18,12 @@ html, body {
         height: 200px;
         border: 2px solid red;
         text-align: center;
+        padding: 10px;
         h4 {
             font-size: 16px;
+        }
+        p {
+            font-size: 12px;
         }
     }
     .a { 
@@ -33,4 +37,26 @@ html, body {
     .b { width: 70%; }
     .c, .f { width: 30%; }
     .d, .e { width: 35%; }
+    @media (max-width: 800px){
+        .b {
+            width: 100%;
+        }
+        .c, .d, .e, .f {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 550px){
+        .c, .d, .e, .f, .g {
+            width: 100%;
+        }
+    }
 }
+
+// @media (max-width: 800px){
+//     .b {
+//         width: 100%;
+//     }
+//     .c, .d, .e, .f, .g {
+//         width: 50%;
+//     }
+// }
