@@ -69,5 +69,6 @@
     - 先設定.img為100趴
     - 再設定.sblock為30趴
 - .sblock { margin: ..} 造成破版？？
+- 問六角scss的media query的幾種方式中要怎樣設定會比較好？？
 <hr>
 
