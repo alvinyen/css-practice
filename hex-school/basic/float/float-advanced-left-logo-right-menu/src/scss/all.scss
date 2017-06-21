@@ -1,0 +1,114 @@
+@mixin clearfix {
+  &:after, &:before {
+    content: "";
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
+  *zoom:1;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	// border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    border: 2px solid red;
+    box-sizing: border-box;
+    // text-align: center;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+}
+.wrapper {
+    .header {
+        @include clearfix();
+        .icon {
+            float: left;
+            text-align: initial;
+            border: 5px dotted blue;
+            // width: auto;
+            // height: auto;
+        }
+        ul {
+            // float: left;
+            float: right;
+            margin-right: 20px;
+            padding: 10px;
+            li {
+                float: left;
+                margin-right: 20px;
+                border: 8px solid green;
+                a {
+                    width: 100%;
+                    border: 5px solid blue;
+                    display: inline-block;
+                    &:hover {
+                        background-color: orange;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        border-color: green;
+        @include clearfix();
+        padding-top: 10px;
+        padding-bottom: 30px;
+        .sidebar, .content, .aside {
+            float: left;
+            width: 32%;
+            padding: 10px;
+        }
+        .sidebar, .content {
+            margin-right: 2%;
+        }
+    }
+    .footer {
+        text-align: center;
+    }
+}

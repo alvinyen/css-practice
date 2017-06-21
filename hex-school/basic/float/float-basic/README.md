@@ -1,5 +1,12 @@
 # float-basic
 
+## 快速重點
+- float可能影響的部分
+    - 父元素
+    - float元素之後的元素
+- 對父元素、容器元素做micro clearfix hack
+- 從前到後，對最後1個float元素的後面那一個元素設定clearfix: both;
+
 ## 專案說明
 - 練習css基本的float處理
 - 需要並排的時候使用float
