@@ -9,6 +9,16 @@
         - 2. logo、menu同在左
     - 所以正確來說是3*2...
 
+## 讓元素內的文字排版變的更好看
+- 用padding做推擠
+
+## 『 關於a tag、img破版  』
+- a.icon設定成為float元素之後就可以正常包裹img？？
+    - a.icon未能正常包裹img、破圖
+        - ![](https://i.imgur.com/2zj011j.png)
+    - a.icon正常包裹img
+        - ![](https://i.imgur.com/2bz16B4.png)
+
 ## 『 快速重點 』
 - 破版的可能：高度寫死、box、html元素間的奇怪空格、float
 - 2個元素不知道哪1個高度比較高，要一起往下推擠 -> 用個 ".容器" 包起來做共同設定
@@ -20,6 +30,7 @@
     - float元素就不再是display: block，可以任意設定寬度，整個呈現比較類似display: inline-block
 - float其他重點：
     - clearfix: both; 只要在float同一層級中後面的元素去下，不會影響到父層級的之後的元素。
+    - 並排的float元素記得設定寬度%數，不然block元素 (例如ul、li)預設還是100%!!
 - float元素的其他麻煩：
     - 忽略vertical-align -> display: inline-block;
     - 忽略text-align -> height、line-height
@@ -64,7 +75,8 @@
             - ![](https://i.imgur.com/bzpK6hB.png)
     - 解法3：let ul as a flexbox container
 - 垂直置中
-    - 同時設定1. height、2. line-height
+    - 1. 同時設定1. height、2. line-height
+    - 2. 用padding去做推擠
 
 <hr>
 <hr>
@@ -86,6 +98,11 @@
                 - ul.top-menu { float: right; }
                 - ul.top-menu li { floar: left; }
     - 圖片太大張可能造成破版header
+- a.icon設定成為float元素之後就可以正常包裹img？？
+    - a.icon未能正常包裹img、破圖
+        - ![](https://i.imgur.com/2zj011j.png)
+    - a.icon正常包裹img
+        - ![](https://i.imgur.com/2bz16B4.png)
 
 <hr>
 <hr>
@@ -101,9 +118,3 @@
 - float -> 可能導致沒有實際的高度
     - 解法1：設定固定的高度
     - 解法2：在float元素之後做clearfix
-
-
-- 並排元素"們"除了設定float: left或right之外，記得也要設定寬度趴數，『不然預設是100趴！！』
-- 讓元素內的文字好看：padding
-- 設定了float之後.icon區塊的a tag的border就正常包住img了..
-- 
