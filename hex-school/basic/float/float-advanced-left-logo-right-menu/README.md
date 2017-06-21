@@ -14,6 +14,11 @@
     - float element (不管原本是不是block element)，雖然最後會是block element，但這樣狀況下的float block element不會填滿整列！！
 - float element做為父元素可以完整的吃到child float elements，在這樣的情況下，在parent float element中不用特別做clearfix。
 
+## 『 垂直置中 』
+- 1. flexbox
+- 2. 高度 + 行高
+- 3. 用padding去推
+
 ## 『 設定寬度%數 』
 - inline element的寬度%數設定不會起作用
 - 一定要block element或float block element才能再進一步設定寬度%數，才會起作用。
@@ -23,6 +28,9 @@
 
 ## 『 讓元素內的文字排版變的更好看 』
 - 用padding做推擠
+
+## 『 a tag的設定技巧 』
+- hover的時候長出下面的border
 
 ## 『 關於a tag、img破版  』
 - a.icon設定成為float元素之後就可以正常包裹img？？ => a tag在設定為float元素之後會變成block element！！
