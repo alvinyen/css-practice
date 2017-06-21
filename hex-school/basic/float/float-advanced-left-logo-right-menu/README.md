@@ -9,11 +9,23 @@
         - 2. logo、menu同在左
     - 所以正確來說是3*2...
 
-## 讓元素內的文字排版變的更好看
+## 『 關於float的細節 』
+- 將任意元素轉變為block element
+    - float element (不管原本是不是block element)，雖然最後會是block element，但這樣狀況下的float block element不會填滿整列！！
+- float element做為父元素可以完整的吃到child float elements，在這樣的情況下，在parent float element中不用特別做clearfix。
+
+## 『 設定寬度%數 』
+- inline element的寬度%數設定不會起作用
+- 一定要block element或float block element才能再進一步設定寬度%數，才會起作用。
+- 以父元素的"content"的寬度為主！！ (即使設定為border-box或其他的box)，而不是以box的寬度下去做計算！！
+    - 且算出來的子元素寬度是box的寬度！！！而不是子元素content的寬度！！！
+- 如果父元素的寬度是0，則會繼續往外找，直到找到寬度非0的父元素再把它當作%數計算的基準。
+
+## 『 讓元素內的文字排版變的更好看 』
 - 用padding做推擠
 
 ## 『 關於a tag、img破版  』
-- a.icon設定成為float元素之後就可以正常包裹img？？
+- a.icon設定成為float元素之後就可以正常包裹img？？ => a tag在設定為float元素之後會變成block element！！
     - a.icon未能正常包裹img、破圖
         - ![](https://i.imgur.com/2zj011j.png)
     - a.icon正常包裹img
