@@ -1,14 +1,15 @@
 @mixin clearfix {
-  &:after, &:before {
-    content: "";
-    display: table;
-  }
-  &:after{
-    clear:both;
-  }
-  *zoom:1;
+    &::after, &::before {
+        content: "";
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+    *zoom:1;
 }
 
+// css reset
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +54,7 @@ table {
 	border-spacing: 0;
 }
 
-// setting of every project
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -75,30 +76,22 @@ html, body {
     margin: 0;
 }
 .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
     border-color: blue;
-    max-width: 960px;
-    margin: 0 auto 0 auto;
-    line-height: 1.5;
-    ul.news {
-        @include clearfix;
+    ul.sidemenu {
+        width: 200px;
+        float: left;
+
+        padding-top: 10px;
+        border: none;
+
         li {
-            float: left;
-            width: 31.33333%;
-            margin-left: 1%;
-            margin-right: 1%;
-            margin-bottom: 1em;
-            h2 {
-                text-align: center;
-                color: #000000;
-                padding: .3em;
-                font-size: 20px;
-            }
-            @media (max-width: 768px){
-                width: 48%;
-            }
-            @media (max-width: 450px){
-                width: 98%;
-            }
+            margin-bottom: 20px;
+            text-align: center;
         }
+    }
+    .content {
+        margin-left: 220px;
     }
 }
