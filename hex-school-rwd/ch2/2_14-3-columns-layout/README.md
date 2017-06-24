@@ -50,4 +50,3 @@
         - 不需要設定下margin：margin: 0 auto;
 - 在做media query的時候
     - 記得把之前推掉 (margin、padding)的%數加進來計算才不會不如預期、破版
-
